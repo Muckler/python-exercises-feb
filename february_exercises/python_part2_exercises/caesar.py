@@ -1,4 +1,4 @@
-encr_mess = "lbh zhfg hayrnea jung lbh unir yrnearq"
+encr_mess = "lbh zhfg hayrnea jung, lbh unir yrnearq"
 encr_mess_xspace = encr_mess.replace(" ", "")
 ###convert message to a list of characters
 encr_list = []
@@ -12,7 +12,10 @@ print(asc_conv)
 #subtract 13 from each ascii letter to get deciphered ascii of text
 deci_asc = []
 for k in range(0, len(asc_conv)):
-  deci_asc.append(asc_conv[k] - 13)
+  if asc_conv[k] > 109:
+    deci_asc.append(asc_conv[k] - 13)
+  elif asc_conv[k] < 109:
+    deci_asc.append(asc_conv[k]-19)
     
 print(deci_asc)
 
