@@ -9,6 +9,3 @@ for star in tri:
   j = j - 1
     
 
-#for star in tri:
-  #print((" " * i), star)
-  #i = i - 1
