@@ -9,6 +9,8 @@ name = "pypi"
 
 ipython = "*"
 pendulum = "*"
+matplotlib = "*"
+numpy = "*"
 
 
 [dev-packages]
