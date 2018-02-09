@@ -8,6 +8,7 @@ def square():
   left(90)
   down()
   # draw the square
+  pencolor('orange')
   forward(100)
   left(90)
   forward(100)
@@ -15,6 +16,7 @@ def square():
   forward(100)
   left(90)
   forward(100)
-  mainloop()
+  
 if __name__ == "__main__":
     square()
+    mainloop()

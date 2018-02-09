@@ -20,7 +20,6 @@ def hex():
   left(60)
   forward(100)
 
-  mainloop()
-
 if __name__ == "__main__":
   hex()
+  mainloop()

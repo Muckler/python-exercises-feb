@@ -9,12 +9,14 @@ def runtri():
   left(90)
   down()
   # draw the triangle
+  pencolor('blue')
   forward(100)
   left(120)
   forward(100)
   left(120)
   forward(100)
 
-  mainloop()
+  
 if __name__ == "__main__":
-    runtri()
+    runtri() 
+    mainloop()
