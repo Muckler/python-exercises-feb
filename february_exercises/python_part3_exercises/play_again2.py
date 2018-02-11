@@ -1,13 +1,19 @@
-def first_play():
-  def play():
+play_more = True
+
+def play(player):
     answer = input("Do you want to play again? (y or n)  ")
     if answer == "y":
-      return True
+      return player
     elif answer == "n":
-      return False
+      print("Ok we're done.")
+      global play_more 
+      play_more = False
+      return play_more
+  
     else:
       print("Invalid input. ")
-      first_play()
-    
+while play_more == True:
+  play(play_more)
 
-print(play())
+      
+      
