@@ -1,0 +1,5 @@
+userin = input('Enter a file name..  ')
+file_handle = open(userin, 'w')
+contents = input('Enter some words for your file..  ')
+file_handle.write(contents)
+file_handle.close()
