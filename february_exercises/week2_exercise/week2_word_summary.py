@@ -1,4 +1,5 @@
-#still working on this one
+#still working on this one: but fixed it with 
+#week2_word_summary_#2.py
 user_paragraph = ("to be or not to be")  
 user_paragraph.lower()
 def word_histogram(paragraph):
@@ -12,8 +13,7 @@ def word_histogram(paragraph):
       elif paragraph[i] == " ":
         word_list.append(the_words)
         the_words = ""
-      else:
-      #elif i == len(paragraph)-1:
+      elif i == len(paragraph)-1:
         the_words = the_words + the_words[i]
         word_list.append(the_words)
         #the_words = ""

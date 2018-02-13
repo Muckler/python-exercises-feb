@@ -1,6 +1,5 @@
-enter_paragraph = ("To be or Not to be")  
+enter_paragraph = ("To be or not to be")  
 user_paragraph = enter_paragraph.lower()
-print(user_paragraph)
 def word_histogram(paragraph):
     the_words = ""
     word_list = []
@@ -18,8 +17,6 @@ def word_histogram(paragraph):
       
     for each in word_list:
         word_dict.update({each:0}) 
-    print(word_list)
-    print(word_dict) 
     for each in word_list:
         word_dict[each] += 1
     return word_dict
