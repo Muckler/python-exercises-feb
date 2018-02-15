@@ -56,6 +56,7 @@ sonny.greet(jordan)
 print(sonny.greeting_count)
 sonny.greet(jordan)
 print(sonny.greeting_count)
+sonny.print_contact_info()
 
 
 

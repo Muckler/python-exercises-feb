@@ -4,7 +4,7 @@ class Vehicle:
     self.model = model
     self.year = year
   def print_info (self):
-    print(year, make, model)
+    print(self.year,self.make, self.model)
 
 car = Vehicle('Nissan', 'Leaf', 2015)
-print(car.make, car.model, car.year)
+car.print_info()
