@@ -1,4 +1,5 @@
 import pygame
+import random
 KEY_UP = 273
 KEY_DOWN = 274
 KEY_LEFT = 276
@@ -54,6 +55,21 @@ def main():
     
         # Draw background
         screen.blit(background_image, (0, 0))
+        if change_dir_countdown == 0:
+            change_dir_countdown = 120
+            random_spot = random.randint(0,3)
+            if random_spot == 0:
+                monster_x = 0
+                monster_y = 0
+            elif random_spot == 1:
+                monster_x = 500
+                monster_x = 0
+            elif random_spot == 2:
+                monster_x = 0
+                monster_y = 500
+            elif random_spot == 3:
+                monster_x = 500
+                monster_y = 500
         screen.blit(monster, (monster_x, monster_y))
         screen.blit(hero, (hero_x, hero_y))
         
@@ -77,20 +93,8 @@ def main():
             monster_dir_y = -monster_dir_y
             monster_y = 0
         change_dir_countdown -= 1
-        if change_dir_countdown == 0:
-            random_spot = random.randint(0,3)
-            if random__spot == 0:
-                monster_dir_x = 0
-                monster_dir_y = 0
-            elif random_spot == 1:
-                monster_dir_x = 500
-                monster_dir_x = 0
-            elif random_spot == 2:
-                monster_dir_x = 0
-                monster_dir_y = 500
-            elif random_spot == 3:
-                monster_dir_x = 500
-                monster_dir_y = 500
+        
+        
     
     pygame.quit()
 
